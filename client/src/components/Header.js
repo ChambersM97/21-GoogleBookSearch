@@ -3,7 +3,7 @@ import React from 'react';
 const Header = () => {
     return(
         <header>
-            <i class="fas fa-book-reader fa-3x"></i>
+            <i className="fas fa-book-reader fa-3x"></i>
             <h1>Books Cards</h1>
         </header>
     )
