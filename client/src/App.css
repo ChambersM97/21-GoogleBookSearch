@@ -15,3 +15,8 @@ header h1 {
   margin-left: 15px;
   font-weight: 300;
 }
+
+form {
+  padding: 30px 0 30px 0;
+  text-align: center
+}
