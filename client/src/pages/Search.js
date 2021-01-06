@@ -1,10 +1,10 @@
 import React, {Component} from "react";
-import SearchArea from "./SearchArea";
-import BookList from "./BookList";
+import SearchArea from "../components/SearchArea";
+import BookList from "../components/BookList";
 import request from 'superagent';
 
 
-class Books extends Component {
+class Search extends Component {
     constructor(props){
         super(props);
         this.state = {
@@ -19,6 +19,7 @@ class Books extends Component {
             .get("https://www.googleapis.com/books/v1/volumes")
             .query({q : this.state.searchField})
             .then((data) => {
+                console.log(data)
                 this.setState({books: [...data.body.items]})
             })
     }
@@ -40,4 +41,4 @@ class Books extends Component {
 
 }
 
-export default Books;
+export default Search;
