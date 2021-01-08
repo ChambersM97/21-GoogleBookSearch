@@ -20,8 +20,9 @@ app.use(routes);
 mongoose.connect(
   process.env.MONGODB_URI || "mongodb://localhost/googlebooks",
   {
-    useCreateIndex: true,
-    useNewUrlParser: true
+    useNewUrlParser: true,
+    useCreateIndex: true
+
   }
 );
 
